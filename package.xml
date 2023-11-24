@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>tf2_projector</name>
+  <version>0.1.0</version>
+  <description>This package provides a node that projects the transform of a given tf2 frame (source) to another tf2 frame (target) under the same root, using an arbitrary (transitive) parent of the target frame as an attachment frame for the projection.</description>
+  <author email="ethz@juliankeller.net">jk-ethz</author>
+  <maintainer email="ethz@juliankeller.net">jk-ethz</maintainer>
+  <license>Proprietary</license>
+
+  <export>
+    <exec_depend>rclpy</exec_depend>
+    <exec_depend>rcl_interfaces</exec_depend>
+    <exec_depend>tf2_ros</exec_depend>
+    <exec_depend>python-transforms3d-pip</exec_depend>
+    <exec_depend>geometry_msgs</exec_depend>
+    <exec_depend>ros2launch</exec_depend>
+
+    <build_type>ament_python</build_type>
+  </export>
+</package>
